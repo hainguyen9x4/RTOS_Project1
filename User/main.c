@@ -32,7 +32,7 @@ void vTaskRecFromUSART1(void *p)
 int main ( void )
 {	
 	SystemInit();
-//Bat dau chuong trinh
+//Bat dau chuong trinh*********************
 	USARTx_Configuration(USART1);
 	GPIO_Configuration ();	         
 	USARTx_SendString(USART1,"Khoi dong xong he thong\n\r");	

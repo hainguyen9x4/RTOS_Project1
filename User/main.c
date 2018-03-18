@@ -35,8 +35,7 @@ int main ( void )
 //Bat dau chuong trinh*********************
 	USARTx_Configuration(USART1);
 	GPIO_Configuration ();	         
-	USARTx_SendString(USART1,"Khoi dong xong he thong\n\r");	
-	USARTx_SendString(USART1,"This is command\n\r");	
+	USARTx_SendString(USART1,"Khoi dong xong he thong\n\r");		
 	//xQueue=xQueueCreate(5,sizeof(xData));
 	//tao semaphore
 	vSemaphoreCreateBinary(binary_sem);

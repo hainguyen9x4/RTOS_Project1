@@ -36,8 +36,8 @@ int main ( void )
 	USARTx_Configuration(USART1);
 	GPIO_Configuration ();	         
 	USARTx_SendString(USART1,"Khoi dong xong he thong\n\r");		
-	//xQueue=xQueueCreate(5,sizeof(xData));
-	//tao semaphore
+	xQueue=xQueueCreate(5,sizeof(xData));
+	//tao semaphore*************************
 	vSemaphoreCreateBinary(binary_sem);
 	//tao queue
 	xGlobleQueue=xQueueCreate(3,sizeof(int));
